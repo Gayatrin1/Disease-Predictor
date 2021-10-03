@@ -2,7 +2,7 @@ from werkzeug.datastructures import ImmutableMultiDict
 import numpy as np
 import pickle
 from flask import Flask, render_template,request,url_for, redirect
-model = pickle.load(open('model2.pkl','rb'))
+model = pickle.load(open('model1.pkl','rb'))
 app = Flask(__name__)
 
 symptoms = ['itching', 'skinrash', 'nodalskineruptions', 'continuoussneezing',
